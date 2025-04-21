@@ -3,10 +3,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-var ghpages = require('gh-pages');
-
-ghpages.publish('dist', function(err) {});
-
 module.exports = {
   mode: "production",
   entry: "./src/index.js",
